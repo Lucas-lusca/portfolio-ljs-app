@@ -9,7 +9,7 @@ on:
 
 jobs:
   build-test-push:
-    name: Build, Test, and Push Docker Image
+    name: Build, Test, and Push Docker Imag
     runs-on: ubuntu-latest
 
     steps:
