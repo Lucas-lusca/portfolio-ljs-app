@@ -1,0 +1,28 @@
+<app-section-layout sectionId="about" title="Sobre Mim" background="">
+    <div>
+        <div>
+            <div>
+                <p>
+                    Sou um desenvolvedor de software apaixonado por criar soluções que fazem a diferença.
+                    Com mais de 5 anos de experiência, trabalho com as mais modernas tecnologias do mercado.
+                </p>
+                <p>
+                    Minha jornada na programação começou com curiosidade e se transformou em uma carreira
+                    dedicada a resolver problemas complexos através do código.
+                </p>
+                <p>
+                    Acredito em código limpo, boas práticas e colaboração em equipe. Estou sempre em busca
+                    de novos desafios e oportunidades de aprendizado.
+                </p>
+            </div>
+            <div>
+                @for (card of cards; track card.title) {
+                <app-cards-layout 
+                    [title]="card.title" 
+                    [description]="card.description">
+                </app-cards-layout>
+                }
+            </div>
+        </div>
+    </div>
+</app-section-layout>

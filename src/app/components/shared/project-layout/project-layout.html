@@ -1,0 +1,18 @@
+<div>
+    <h3>{{ title }}</h3>
+    <p>{{ description }}</p>
+
+    <div>
+        <span>
+            @for (tech of techs; track tech.name) {
+            {{ tech.name }}
+            }
+        </span>
+    </div>
+
+    <div>
+        <a [href]="link">
+            <span>Código</span>
+        </a>
+    </div>
+</div>

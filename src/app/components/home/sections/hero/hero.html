@@ -1,0 +1,52 @@
+<app-section-layout sectionId="hero" title="" background="">
+    <div>
+        <div>
+            <div>
+                <div>
+                    <img src="assets/profile.jpg" alt="Lucas Justi Scariot" />
+                </div>
+            </div>
+
+            <div>
+                <h1>{{ name }}</h1>
+
+                <p>{{ role }}</p>
+
+                <p>
+                    {{ description }}
+                </p>
+
+                <div>
+                    <a href="">
+                        Entre em Contato
+                    </a>
+
+                    <a href="">
+                        Ver Projetos
+                    </a>
+
+                    <a href="">
+                        Ver Projetos
+                    </a>
+                </div>
+
+                <div>
+                    <a [href]="github">
+                        GitHub
+                    </a>
+
+                    <a [href]="linkedin">
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path></path>
+            <path d="M0,40 C250,120 450,100 600,90 C750,80 950,100 1200,80 L1200,120 L0,120 Z"></path>
+        </svg>
+    </div>
+</app-section-layout>
