@@ -79,8 +79,7 @@
           "builder": "angular-cli-ghpages:deploy",
           "options": {
             "baseHref": "/portfolio-ljs-app/",
-            "name": "Portfolio LJS",
-            "email": "team@angular.schule"
+            "name": "Portfolio LJS"
           }
         }
       }
