@@ -11,6 +11,5 @@ export class SectionLayout {
 
   @Input() title: string = '';
   @Input() sectionId: string = '';
-  @Input() background: string = '';
 
 }

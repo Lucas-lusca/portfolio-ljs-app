@@ -11,7 +11,6 @@ export class Hero {
 
   name: string = "Lucas Justi Scariot";
   role: string = "Desenvolvedor Full Stack";
-  description: string = "Transformando ideias em soluções digitais inovadoras.";
   github: string = "https://github.com/Lucas-lusca";
   linkedin: string = "https://www.linkedin.com/in/lucas-justi-scariot-428938223/";
 

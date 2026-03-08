@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Mada:wght@200..900&family=Noto+Sans+Symbols:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "IBM Plex Sans", sans-serif;;
+}
+
+:root {
+    --color1: #fca61d;
+    --color2: #fdbc51;
+    --color3: #fed385;
+    --color4: #fee9b9;
+    --color5: #ffffed;
+}
