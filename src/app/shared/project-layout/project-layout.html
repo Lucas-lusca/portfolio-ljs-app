@@ -1,19 +1,19 @@
-<div class="projectCard">
-    <h3>{{ title }}</h3>
-
+<div class="projectCard" role="article" aria-labelledby="project-title">
+    <h3 [id]="'project-' + title">{{ title }}</h3>
     <p class="description">
         {{ description }}
     </p>
-
-    <div class="techs">
+    <div class="techs" role="list" aria-label="Tecnologias utilizadas neste projeto">
         @for (tech of techs; track tech.name) {
-            <span class="tech">{{ tech.name }}</span>
+        <span class="tech" role="listitem">
+            {{ tech.name }}
+        </span>
         }
     </div>
-
     <div class="links">
-        <a [href]="link" target="_blank">
-            <i class="fa-brands fa-github"></i>
+        <a [href]="link" target="_blank" rel="noopener noreferrer"
+            aria-label="Abrir código do projeto {{ title }} no GitHub">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
             <span>Código</span>
         </a>
     </div>

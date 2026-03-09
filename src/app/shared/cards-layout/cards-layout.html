@@ -1,8 +1,13 @@
-<div class="card">
-    <i [class]="icon"></i>
+<div class="card" tabindex="0" [attr.aria-labelledby]="'card-title-' + title" [attr.aria-describedby]="'card-desc-' + title">
+    <i [class]="icon" aria-hidden="true" role="presentation">
+    </i>
+
     <div class="text">
-        <h3>{{ title }}</h3>
-        <p>
+        <h3 [id]="'card-title-' + title">
+            {{ title }}
+        </h3>
+
+        <p [id]="'card-desc-' + title">
             {{ description }}
         </p>
     </div>

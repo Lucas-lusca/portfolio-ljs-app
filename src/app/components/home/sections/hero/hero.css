@@ -8,7 +8,8 @@
 
 .profile {
     display: flex;
-    justify-content: center;
+    justify-content: end;
+    padding-right: 100px;
 }
 
 .profile picture {
@@ -18,7 +19,7 @@
     padding: 4px;
     border-radius: 50%;
     background-color: var(--color5);
-    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 }
 
 .profile img {
@@ -33,11 +34,16 @@
     gap: 10px;
 }
 
-.infos i{
+.infos i {
     color: var(--color5);
 }
 
-.infos h1{
+.infos i:hover {
+    transform: scale(1.1);
+    color: var(--color4);
+}
+
+.infos h1 {
     font-size: clamp(32px, 5vw, 52px);
 }
 
@@ -47,7 +53,9 @@
     gap: 12px;
 }
 
-.buttons button {
+.buttons a {
+    display: inline-block;
+    text-decoration: none;
     border-radius: 24px;
     padding: 10px 40px;
 }
@@ -77,11 +85,16 @@
     height: 40px;
 }
 
-.ink path{
+.ink path {
     background-color: var(--color1);
 }
 
 @media (max-width: 929px) {
+    .profile {
+        display: flex;
+        justify-content: center;
+        padding-right: 0;
+    }
 
     .infos {
         align-items: center;

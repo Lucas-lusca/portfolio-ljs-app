@@ -1,24 +1,41 @@
 <app-section-layout sectionId="about" title="Sobre Mim">
-    <div class="division aboutText">
+    <div class="division aboutText" aria-label="Descrição profissional de Lucas Justi Scariot">
         <p>
-            Sou desenvolvedor web com experiência em sistemas ERP, atuando no desenvolvimento de aplicações utilizando
-            PHP no back-end, Angular no front-end e bancos de dados SQL.
+            Sou desenvolvedor web com experiência em sistemas
+            <abbr title="Enterprise Resource Planning">ERP</abbr>, atuando no desenvolvimento de aplicações utilizando
+            <abbr title="Hypertext Preprocessor">PHP</abbr> no back-end,
+            <abbr title="Framework web para aplicações SPA desenvolvido pelo Google">Angular</abbr> no front-end e
+            bancos de dados <abbr title="Structured Query Language">SQL</abbr>.
             Atuo na criação e manutenção de telas, implementação de regras de negócio, desenvolvimento de
             funcionalidades e modernização de sistemas legados para arquiteturas mais atuais. Também possuo experiência
-            com integração de APIs REST, incluindo gateways de pagamento e serviços externos.
+            com integração de
+            <abbr title="Application Programming Interface">APIs</abbr>-<abbr title="Representational State Transfer">REST</abbr>, incluindo gateways de pagamento e serviços externos.
         </p>
+
         <p>
-            Trabalho com controle de versão utilizando Git e GitHub e já atuei em equipes que utilizam metodologia ágil
-            Scrum, participando de Dailys, planejamento e revisões de código.
+            Trabalho com controle de versão utilizando
+            <abbr title="Sistema de controle de versão distribuído">Git</abbr> e
+            <abbr title="Plataforma de hospedagem e colaboração de código">GitHub</abbr>
+            e já atuei em equipes que utilizam metodologia ágil
+            <abbr title="Framework ágil para gerenciamento de projetos">Scrum</abbr>,
+            participando de dailys, planejamento e revisões de código.
         </p>
+
         <p>
-            Formado em Análise e Desenvolvimento de Sistemas e cursando Pós Graduação em Inteligência Artificial e
-            Sistemas Inteligentes.
+            Formado em Análise e Desenvolvimento de Sistemas e cursando
+            Pós-Graduação em
+            <abbr title="Inteligência Artificial">IA</abbr>
+            e Sistemas Inteligentes.
         </p>
     </div>
-    <div class="division cards">
+
+    <div class="division cards" role="list" aria-label="Principais competências">
         @for (card of cards; track card.title) {
-        <app-cards-layout [title]="card.title" [description]="card.description" [icon]="card.icon">
+        <app-cards-layout
+            role="listitem"
+            [title]="card.title"
+            [description]="card.description"
+            [icon]="card.icon">
         </app-cards-layout>
         }
     </div>

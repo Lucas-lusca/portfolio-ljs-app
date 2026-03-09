@@ -1,8 +1,9 @@
-<div class="skill">
+<div class="skill" role="listitem" aria-labelledby="skill-title">
     <div>
-        <h3>
+        <h3 [id]="'skill-' + name">
             {{ name }}
         </h3>
+
         <p>
             {{ description }}
         </p>

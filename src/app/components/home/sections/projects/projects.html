@@ -1,8 +1,9 @@
 <app-section-layout sectionId="projects" title="Projetos" background="">
-    <div class="projectsGrid">
+    <div class="projectsGrid" role="list" aria-label="Lista de projetos desenvolvidos por Lucas Justi Scariot">
         @for (project of projects; track project.title) {
-        <app-project-layout [title]="project.title" [description]="project.description" [techs]="project.techs"
-            [link]="project.link"></app-project-layout>
+        <app-project-layout role="listitem" [title]="project.title" [description]="project.description"
+            [techs]="project.techs" [link]="project.link">
+        </app-project-layout>
         }
     </div>
 </app-section-layout>

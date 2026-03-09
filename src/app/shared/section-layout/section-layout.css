@@ -6,21 +6,6 @@
     background-color: var(--color4);
 }
 
-h2{
-    text-align: center;
-    font-size: 36px;
-    padding: 10px;
-}
-
-section h2::after {
-    content: "";
-    display: block;
-    width: 70px;
-    height: 3px;
-    background: var(--color1);
-    margin: 3px auto 0;
-}
-
 .hero {
     background-color: var(--color1);
     display: flex;
@@ -41,7 +26,10 @@ section h2::after {
     flex-wrap: wrap;
     gap: 40px;
     padding: 25px;
-    min-height: 160px;
+    min-height: 190px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .orangeContent {
@@ -52,5 +40,72 @@ section h2::after {
     flex-wrap: wrap;
     gap: 40px;
     padding: 25px;
-    min-height: 160px;
+    min-height: 190px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    padding: 10px;
+}
+
+.sectionTitle a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.anchor {
+    opacity: 0;
+    transform: translateX(-4px);
+    font-size: 0.9em;
+    color: var(--color1);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.sectionTitle:hover .anchor,
+.sectionTitle a:focus-visible .anchor {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.sectionTitle a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    width: 40%;
+    height: 2px;
+    background: var(--color1);
+    transform: translateX(-50%) scaleX(1);
+    transform-origin: center;
+    transition: transform 0.25s ease;
+}
+
+.sectionTitle:hover a::after,
+.sectionTitle a:focus-visible::after {
+    transform: translateX(-50%) scaleX(1.6);
+}
+
+.sectionTitle a:focus-visible {
+    outline: 3px solid currentColor;
+    outline-offset: 4px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
 }

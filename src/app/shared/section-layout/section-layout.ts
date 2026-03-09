@@ -14,4 +14,14 @@ export class SectionLayout {
   @Input() sectionClass: string = 'whiteSection';
   @Input() contentClass: string = 'whiteContent';
 
+  copySectionUrl(event: MouseEvent) {
+    event.preventDefault();
+
+    const link = (event.currentTarget as HTMLAnchorElement).href;
+
+    navigator.clipboard.writeText(link);
+
+    alert("Link copiado!");
+  }
+
 }

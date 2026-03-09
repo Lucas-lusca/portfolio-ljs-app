@@ -1,7 +1,17 @@
 <section [id]="sectionId" [class]="sectionClass">
   @if (title) {
-  <h2>{{ title }}</h2>
+  <h2 class="sectionTitle">
+    <a [href]="'#' + sectionId" (click)="copySectionUrl($event)" [attr.aria-describedby]="'copy-desc-' + sectionId">
+      <span class="anchor" aria-hidden="true">#</span>
+      <span class="titleText">{{ title }}</span>
+    </a>
+
+    <span class="visually-hidden" [id]="'copy-desc-' + sectionId">
+      Copiar link desta seção
+    </span>
+  </h2>
   }
+
   <div [class]="contentClass">
     <ng-content></ng-content>
   </div>

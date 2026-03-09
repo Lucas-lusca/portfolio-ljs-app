@@ -2,37 +2,43 @@
     <app-section-layout sectionId="hero" contentClass="hero">
         <div class="division profile">
             <picture>
-                <img src="assets/profile.jpg" alt="Lucas Justi Scariot" />
+                <img src="assets/profile.jpg" alt="Foto de Lucas Justi Scariot" loading="lazy" />
             </picture>
         </div>
 
         <div class="division infos">
             <h1>{{ name }}</h1>
 
-            <p>{{ role }}</p>
+            <p aria-label="Cargo profissional">
+                {{ description }}
+            </p>
 
-            <div class="buttons">
-                <button class="contactButton">
+            <div class="buttons" role="group" aria-label="Ações principais">
+                <a href="#contact" class="contactButton">
                     Entre em Contato
-                </button>
+                </a>
 
-                <button class="projectButton">
+                <a href="#projects" class="projectButton">
                     Ver Projetos
-                </button>
-            </div>
-
-            <div class="links">
-                <a [href]="github">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-
-                <a [href]="linkedin">
-                    <i class="fa-brands fa-square-linkedin"></i>
                 </a>
             </div>
+
+            <nav class="links" aria-label="Redes sociais">
+                <a [href]="github" target="_blank" rel="noopener noreferrer"
+                    aria-label="Abrir perfil de Lucas Justi Scariot no GitHub">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                </a>
+
+                <a [href]="linkedin" target="_blank" rel="noopener noreferrer"
+                    aria-label="Abrir perfil de Lucas Justi Scariot no LinkedIn">
+                    <i class="fa-brands fa-square-linkedin" aria-hidden="true"></i>
+                </a>
+            </nav>
         </div>
     </app-section-layout>
-    <svg class="ink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+
+    <svg class="ink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"
+        aria-hidden="true" focusable="false">
         <path d="M0,40 C250,120 450,100 600,90 C750,80 950,100 1200,80 L1200,120 L0,120 Z"></path>
     </svg>
 </div>
