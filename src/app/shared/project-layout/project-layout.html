@@ -1,17 +1,19 @@
-<div>
+<div class="projectCard">
     <h3>{{ title }}</h3>
-    <p>{{ description }}</p>
 
-    <div>
-        <span>
-            @for (tech of techs; track tech.name) {
-            {{ tech.name }}
-            }
-        </span>
+    <p class="description">
+        {{ description }}
+    </p>
+
+    <div class="techs">
+        @for (tech of techs; track tech.name) {
+            <span class="tech">{{ tech.name }}</span>
+        }
     </div>
 
-    <div>
-        <a [href]="link">
+    <div class="links">
+        <a [href]="link" target="_blank">
+            <i class="fa-brands fa-github"></i>
             <span>Código</span>
         </a>
     </div>

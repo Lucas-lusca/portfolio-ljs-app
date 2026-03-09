@@ -1,7 +1,7 @@
 <app-section-layout sectionId="skills" title="Habilidades" sectionClass="orangeSection" contentClass="orangeContent">
     <div class="skillsGrid">
         @for (skill of skills; track skill.name) {
-        <app-skill [name]="skill.name" [description]="skill.description"></app-skill>
+        <app-skill-layout [name]="skill.name" [description]="skill.description"></app-skill-layout>
         }
     </div>
 </app-section-layout>

@@ -1,10 +1,8 @@
 <app-section-layout sectionId="projects" title="Projetos" background="">
-    @for (project of projects; track project.title) {
-        <app-project-layout
-            [title]="project.title"
-            [description]="project.description"
-            [techs]="project.techs"
-            [link]="project.link"
-        ></app-project-layout>
-    }
+    <div class="projectsGrid">
+        @for (project of projects; track project.title) {
+        <app-project-layout [title]="project.title" [description]="project.description" [techs]="project.techs"
+            [link]="project.link"></app-project-layout>
+        }
+    </div>
 </app-section-layout>

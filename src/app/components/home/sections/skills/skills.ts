@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { SectionLayout } from "../../../../shared/section-layout/section-layout";
-import { Skill } from "../../../../shared/skill/skill";
+import { SkillLayout } from '../../../../shared/skill-layout/skill-layout';
 
 @Component({
   selector: 'app-skills',
-  imports: [SectionLayout, Skill],
+  imports: [SectionLayout, SkillLayout],
   templateUrl: './skills.html',
   styleUrl: './skills.css',
 })
@@ -32,8 +32,8 @@ export class Skills {
       description: 'Containerização e padronização de ambientes'
     },
     {
-      name: 'Git',
-      description: 'Controle de versão e colaboração'
+      name: 'Git/Github',
+      description: 'Controle de versão e deploy de aplicações'
     }
   ];
 

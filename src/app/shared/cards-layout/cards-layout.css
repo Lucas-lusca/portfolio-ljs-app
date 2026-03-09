@@ -18,6 +18,6 @@
 }
 
 .text p {
-    text-justify: auto;
+    text-align: justify;
     margin: 4px 0 0 0;
 }

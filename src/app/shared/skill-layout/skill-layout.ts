@@ -1,12 +1,12 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-skill',
+  selector: 'app-skill-layout',
   imports: [],
-  templateUrl: './skill.html',
-  styleUrl: './skill.css',
+  templateUrl: './skill-layout.html',
+  styleUrl: './skill-layout.css',
 })
-export class Skill {
+export class SkillLayout {
 
   @Input() name: string = '';
   @Input() description: string = '';
