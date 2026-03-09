@@ -16,8 +16,11 @@
 .cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    height: 350px;
+    gap: 16px;
+}
+
+.cards app-cards-layout {
+    width: 100%;
 }
 
 @media (max-width: 474px) {
