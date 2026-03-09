@@ -1,17 +1,7 @@
-<app-section-layout sectionId="skills" title="Habilidades" background="">
-    <div>
+<app-section-layout sectionId="skills" title="Habilidades" sectionClass="orangeSection" contentClass="orangeContent">
+    <div class="skillsGrid">
         @for (skill of skills; track skill.name) {
-        <div>
-            <h3>
-                {{ skill.name }}
-            </h3>
-
-            <p>
-                {{ skill.description }}
-            </p>
-        </div>
-        } @empty {
-        <p>Não há habilidades.</p>
+        <app-skill [name]="skill.name" [description]="skill.description"></app-skill>
         }
     </div>
 </app-section-layout>

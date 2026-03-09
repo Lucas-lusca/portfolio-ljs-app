@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { SectionLayout } from "../../../shared/section-layout/section-layout";
-import { CardsLayout } from "../../../shared/cards-layout/cards-layout";
+import { SectionLayout } from "../../../../shared/section-layout/section-layout";
+import { CardsLayout } from "../../../../shared/cards-layout/cards-layout";
 
 @Component({
   selector: 'app-about',

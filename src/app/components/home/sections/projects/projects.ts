@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { SectionLayout } from "../../../shared/section-layout/section-layout";
-import { ProjectLayout } from "../../../shared/project-layout/project-layout";
+import { SectionLayout } from "../../../../shared/section-layout/section-layout";
+import { ProjectLayout } from "../../../../shared/project-layout/project-layout";
 
 @Component({
   selector: 'app-projects',

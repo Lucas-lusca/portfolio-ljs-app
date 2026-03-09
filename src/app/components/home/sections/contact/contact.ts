@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { SectionLayout } from "../../../shared/section-layout/section-layout";
-import { FormLayout } from "../../../shared/form-layout/form-layout";
+import { SectionLayout } from "../../../../shared/section-layout/section-layout";
+import { FormLayout } from "../../../../shared/form-layout/form-layout";
 
 @Component({
   selector: 'app-contact',

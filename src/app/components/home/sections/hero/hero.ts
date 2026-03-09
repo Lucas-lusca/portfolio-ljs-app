@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SectionLayout } from '../../../shared/section-layout/section-layout';
+import { SectionLayout } from '../../../../shared/section-layout/section-layout';
 
 @Component({
   selector: 'app-hero',
