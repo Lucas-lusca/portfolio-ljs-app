@@ -1,0 +1,26 @@
+.contactBox {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.contactBox a {
+    align-self: flex-end;
+}
+
+.contactBox p {
+    line-height: 1.6;
+}
+
+.contactBox i {
+    font-size: 40px;
+    color: var(--color1);
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.contactBox i:hover {
+    transform: scale(1.1);
+    color: var(--color2);
+}
