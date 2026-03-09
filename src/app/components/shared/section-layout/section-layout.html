@@ -1,6 +1,8 @@
-<section [id]="sectionId">
-    <h2>
-      {{ title }}
-    </h2>
+<section [id]="sectionId" [class]="sectionClass">
+  @if (title) {
+  <h2>{{ title }}</h2>
+  }
+  <div [class]="contentClass">
     <ng-content></ng-content>
+  </div>
 </section>

@@ -11,5 +11,7 @@ export class SectionLayout {
 
   @Input() title: string = '';
   @Input() sectionId: string = '';
+  @Input() sectionClass: string = 'whiteSection';
+  @Input() contentClass: string = 'whiteContent';
 
 }

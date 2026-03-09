@@ -1,0 +1,23 @@
+.card {
+    display: flex;
+    align-items: center;
+    background-color: var(--color4);
+    padding: 16px 20px;
+    border-radius: 12px;
+    gap: 16px;
+}
+
+.card i {
+    color: var(--color1);
+    font-size: 36px;
+    min-width: 40px;
+}
+
+.text h3 {
+    margin: 0;
+}
+
+.text p {
+    text-justify: auto;
+    margin: 4px 0 0 0;
+}

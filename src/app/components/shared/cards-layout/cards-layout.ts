@@ -8,6 +8,7 @@ import { Component, Input } from '@angular/core';
 })
 export class CardsLayout {
 
+  @Input() icon: string = '';
   @Input() title: string = '';
   @Input() description: string = '';
 

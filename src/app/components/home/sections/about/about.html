@@ -1,28 +1,25 @@
-<app-section-layout sectionId="about" title="Sobre Mim" background="">
-    <div>
-        <div>
-            <div>
-                <p>
-                    Sou um desenvolvedor de software apaixonado por criar soluções que fazem a diferença.
-                    Com mais de 5 anos de experiência, trabalho com as mais modernas tecnologias do mercado.
-                </p>
-                <p>
-                    Minha jornada na programação começou com curiosidade e se transformou em uma carreira
-                    dedicada a resolver problemas complexos através do código.
-                </p>
-                <p>
-                    Acredito em código limpo, boas práticas e colaboração em equipe. Estou sempre em busca
-                    de novos desafios e oportunidades de aprendizado.
-                </p>
-            </div>
-            <div>
-                @for (card of cards; track card.title) {
-                <app-cards-layout 
-                    [title]="card.title" 
-                    [description]="card.description">
-                </app-cards-layout>
-                }
-            </div>
-        </div>
+<app-section-layout sectionId="about" title="Sobre Mim">
+    <div class="division aboutText">
+        <p>
+            Sou desenvolvedor web com experiência em sistemas ERP, atuando no desenvolvimento de aplicações utilizando
+            PHP no back-end, Angular no front-end e bancos de dados SQL.
+            Atuo na criação e manutenção de telas, implementação de regras de negócio, desenvolvimento de
+            funcionalidades e modernização de sistemas legados para arquiteturas mais atuais. Também possuo experiência
+            com integração de APIs REST, incluindo gateways de pagamento e serviços externos.
+        </p>
+        <p>
+            Trabalho com controle de versão utilizando Git e GitHub e já atuei em equipes que utilizam metodologia ágil
+            Scrum, participando de Dailys, planejamento e revisões de código.
+        </p>
+        <p>
+            Formado em Análise e Desenvolvimento de Sistemas e cursando Pós Graduação em Inteligência Artificial e
+            Sistemas Inteligentes.
+        </p>
+    </div>
+    <div class="division cards">
+        @for (card of cards; track card.title) {
+        <app-cards-layout [title]="card.title" [description]="card.description" [icon]="card.icon">
+        </app-cards-layout>
+        }
     </div>
 </app-section-layout>

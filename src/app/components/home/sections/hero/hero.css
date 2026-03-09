@@ -1,13 +1,5 @@
-.hero {
-    background-color: var(--color1);
-    display: flex;
-    justify-content: space-between; /* controla layout desktop */
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    padding: 25px;
-    min-height: 270px;
-    color: var(--color5);
+.background {
+    background-color: var(--color5);
 }
 
 .division {
@@ -16,7 +8,7 @@
 
 .profile {
     display: flex;
-    justify-content: center; /* sempre centraliza a foto */
+    justify-content: center;
 }
 
 .profile picture {
@@ -83,6 +75,10 @@
     fill: var(--color5);
     width: 100%;
     height: 40px;
+}
+
+.ink path{
+    background-color: var(--color1);
 }
 
 @media (max-width: 929px) {

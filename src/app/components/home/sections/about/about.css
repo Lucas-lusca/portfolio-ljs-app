@@ -1,0 +1,27 @@
+.division {
+    flex: 1 1 420px;
+}
+
+.aboutText {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.aboutText p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 350px;
+}
+
+@media (max-width: 474px) {
+    .cards {
+        height: 450px;
+    }
+}
